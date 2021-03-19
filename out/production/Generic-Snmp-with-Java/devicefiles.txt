@@ -1,0 +1,5 @@
+Düzen: cihaz ile bulunan ip adresi(boşluk)cihaz enterprise değeri(boşluk)cihaz adı
+1 Moxa-EDS5G 192.168.127.250 .1.3.6.1.4.1.8691.7.70.1.4
+2 DAHUA 192.168.1.109 1.3.5.2.52.55.2.2.21
+3 Moxa-Iologic 192.168.127.250 .1.3.6.1.4.1.8691.7.64.1.1
+
