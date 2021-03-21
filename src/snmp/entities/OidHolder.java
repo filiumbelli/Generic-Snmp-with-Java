@@ -1,5 +1,6 @@
 package snmp.entities;
 
+
 public class OidHolder {
 
     private String oidValue;

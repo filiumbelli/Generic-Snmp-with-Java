@@ -4,13 +4,13 @@ public class DeviceHolder {
 
     private String id;
     private String deviceName;
-    private String ipAdress;
+    private String ipAddress;
     private String lifeCheckOid;
 
-    public DeviceHolder(String id, String deviceName, String ipAdress, String lifeCheckOid) {
+    public DeviceHolder(String id, String deviceName, String ipAddress, String lifeCheckOid) {
         this.id = id;
         this.deviceName = deviceName;
-        this.ipAdress = ipAdress;
+        this.ipAddress = ipAddress;
         this.lifeCheckOid = lifeCheckOid;
     }
 
@@ -42,7 +42,7 @@ public class DeviceHolder {
         return "DeviceHolder{" +
                 "id='" + id + '\'' +
                 ", deviceName='" + deviceName + '\'' +
-                ", ipAdress='" + ipAdress + '\'' +
+                ", ipAddress='" + ipAddress + '\'' +
                 ", lifeCheckOid='" + lifeCheckOid + '\'' +
                 '}';
     }
@@ -51,11 +51,12 @@ public class DeviceHolder {
         this.deviceName = deviceName;
     }
 
-    public String getIpAdress() {
-        return ipAdress;
+    public String getIpAddress() {
+        return ipAddress;
     }
 
-    public void setIpAdress(String ipAdress) {
-        this.ipAdress = ipAdress;
+    public void setIpAddress(String ipAddress) {
+        this.ipAddress = ipAddress;
     }
+
 }
