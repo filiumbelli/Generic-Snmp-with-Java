@@ -1,0 +1,20 @@
+DROP TABLE IF EXISTS oid,device;
+USE snmp_generic;
+
+CREATE TABLE device
+(
+	id int(11)NOT NULL AUTO_INCREMENT,
+	ip_address VARCHAR(100)NOT NULL,
+	oid VARCHAR(256)NOT NULL,
+	name VARCHAR(256)DEFAULT NULL,
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE oid
+(
+	id int(11)NOT NULL AUTO_INCREMENT,
+	device_id int(11)NOT NULL,
+	value VARCHAR(255)NOT NULL,
+	PRIMARY KEY(id),
+	CONSTRAINT FK_DEVICE FOREIGN KEY(device_id)REFERENCES device(id)
+);
